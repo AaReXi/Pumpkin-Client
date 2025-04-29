@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "pumpkinc",
+  "version": "${version}",
+  "name": "PumpkinClient",
+  "description": "A normal school project",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.aarex.pumpkinc.client.PumpkincDataGenerator"
+    ],
+    "client": [
+      "org.aarex.pumpkinc.client.PumpkincClient"
+    ],
+    "main": [
+      "org.aarex.pumpkinc.Pumpkinc"
+    ]
+  },
+  "mixins": [
+    "pumpkinc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
